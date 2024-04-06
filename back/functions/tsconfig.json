@@ -6,6 +6,7 @@
     "baseUrl": ".",
     "paths": {
       "@good-square/core/*": ["../core/src/*"]
-    }
+    },
+    "types": ["vitest/globals"]
   }
 }
