@@ -7,8 +7,9 @@ export function API({ stack }: StackContext) {
 
   const api = new Api(stack, 'GOODSQUARE_API', {
     routes: {
-      'GET /': 'back/functions/src/lambda.handler',
-      'POST /process': 'back/functions/src/process.handler'
+      'GET /process': 'back/functions/src/lambda.handler',
+      'POST /process': 'back/functions/src/process.handler',
+      $default: 'back/functions/src/lambda.handler',
     }
   });
 
