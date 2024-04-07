@@ -1,3 +1,4 @@
+import { ERRORS } from 'src/utils/validators';
 import { matrixProcessor, handler } from '../src/process';
 import { HandlerResponse, requestGenerator } from './mocks/helper';
 import {
@@ -22,6 +23,7 @@ describe('handler', () => {
     expect(response.success).toEqual(true);
     expect(result.statusCode).toEqual(400);
   });
+
 });
 
 describe('matrixProcessor', () => {

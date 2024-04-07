@@ -5,7 +5,7 @@ export type Matrix = Array<Array<number>>;
 
 export const handler = ApiHandler(async (_evt) => {
   try {
-    const matrix = JSON.parse(_evt.body);
+    const matrix = JSON.parse(_evt.body ?? '[]');
     const result = matrixProcessor(matrix);
 
     return {

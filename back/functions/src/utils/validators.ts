@@ -1,7 +1,7 @@
 export enum ERRORS {
   INVALID_MATRIX = 'Invalid matrix',
   INVALID_SIZE = 'Invalid matrix size',
-  INVALID_CHAR = "Invalid character, must be only 0's and 1's"
+  INVALID_CHAR = "Invalid character"
 }
 
 /**

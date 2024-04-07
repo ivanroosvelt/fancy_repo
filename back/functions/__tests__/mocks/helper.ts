@@ -1,6 +1,9 @@
+import { APIGatewayProxyEventV2 } from 'aws-lambda';
 import { z } from 'zod';
 
-export const requestGenerator = (body: any) => ({ body: JSON.stringify(body) });
+export const requestGenerator = (body: any): Partial<APIGatewayProxyEventV2> => ({
+  body: JSON.stringify(body)
+});
 
 export const HandlerResponse = z.object({
   body: z.string(),
