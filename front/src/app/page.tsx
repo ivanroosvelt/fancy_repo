@@ -24,7 +24,9 @@ export default function Home() {
       setModalData({
         visible: true,
         title: 'Invalid username',
-        content: 'Username must be between 3 and 20 characters long.'
+        content: !/^[a-zA-Z0-9_]*$/.test(userName)
+          ? 'Username must contain only letters and numbers'
+          : 'Username must be between 3 and 20 characters long.'
       });
       return;
     }
@@ -79,7 +81,7 @@ export default function Home() {
             className={`text-4xl my-2 font-semibold italic justify-center
         `}
           >
-            Typeracer
+            TypeRacer
           </h2>
         </div>
         <div>
@@ -104,7 +106,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Improve your typing speed and accuracy with Typeracer.
+            Improve your typing speed and accuracy with TypeRacer.
           </p>
         </div>
       </div>

@@ -5,6 +5,28 @@
 Receives an n x n matrix, and finds out good squares inside it.
 (Good square is an full 1 square starting by unity to n dimention)
 
+---
+
+### Curl Examples
+
+Example 1
+
+```bash
+curl -X POST https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process -H "Content-Type: application/json" -d "[[1,1,1],[1,1,1],[1,1,1]]"
+```
+
+Example 2
+
+```bash
+curl -X POST https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process -H "Content-Type: application/json" -d "[[1,1,1],[1,0,1],[1,1,1]]"
+```
+
+Example 3
+
+```bash
+curl -X POST https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process -H "Content-Type: application/json" -d "[[1,1,1],[1,1,1],[1,1,0]]"
+```
+
 ### Endpoint
 
 ```
@@ -53,25 +75,3 @@ Body: JSON
 | Invalid matrix      | Invalid matrix, must contains at least 1x1                |
 | Invalid matrix size | Invalid matrix, must be square matrix                     |
 | Invalid character   | Invalid matrix, must be , must be only 0's and 1's matrix |
-
----
-
-### Curl Examples
-
-Example 1
-
-```bash
-curl -X POST https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process -H "Content-Type: application/json" -d "[[1,1,1],[1,1,1],[1,1,1]]"
-```
-
-Example 2
-
-```bash
-curl -X POST https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process -H "Content-Type: application/json" -d "[[1,1,1],[1,0,1],[1,1,1]]"
-```
-
-Example 3
-
-```bash
-curl -X POST https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process -H "Content-Type: application/json" -d "[[1,1,1],[1,1,1],[1,1,0]]"
-```

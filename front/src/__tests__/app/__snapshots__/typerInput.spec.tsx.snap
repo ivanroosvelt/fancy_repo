@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`typerInput > should render typerInput 1`] = `
+exports[`typeracer > should render modal 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>

@@ -36,7 +36,7 @@ export default function Page() {
           className={`text-4xl ml-2 mt-2 font-semibold italic justify-center
       `}
         >
-          Typeracer
+          TypeRacer
         </h2>
       </div>
       <div className="flex flex-col align-middle border border-solid bg-white leading-7 p-5">

@@ -8,7 +8,9 @@ Provides an key typing tool to practice and improve speed, accuracy and profienc
 
 ### Endpoint
 
+<a href="https://d1a1ladtyw17ug.cloudfront.net" target="_blank">
 https://d1a1ladtyw17ug.cloudfront.net
+</a>
 
 ### Features
 
