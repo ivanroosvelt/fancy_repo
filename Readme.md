@@ -1,75 +1,20 @@
-## Table of Contents
+# Table of Contents
 
-- [Backend: Good Square Finder](#backgend)
-- [Front: Keyboard trainer](#installation)
+- [Backend Good Square Finder](./back/) - Simple endpoint to find good squares in given matrix.
+- [Front: Keyboard trainer](./front/) - Typeracer: Tool to practice and improve typing.
 
-# Backend: Good Square Finder
+## About this directory
 
-## Features
+Includes the environment configuration stack and deploy commands. Can be deployed to AWS with:
 
-Receives an n x n matrix, and finds out good squares inside it.
-(Good square is an full 1 square starting by unity to n dimention)
-
-### Endpoint
-
-https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process
-
-### Request
-
-Method: POST
-
-Body: JSON
-
-```json
-[
-  [1, 1, 1, 1],
-  [1, 1, 1, 1],
-  [1, 1, 1, 1],
-  [1, 1, 1, 1]
-]
-```
-
-(Or any 0 and 1's matrix)
-
-### Response
-
-```json
-{
-  "total": 30,
-  // Summary of [size, quantity]
-  "summary": [
-    [1, 16],
-    [2, 9],
-    [3, 4],
-    [4, 1]
-  ]
-}
-```
-
----
-
-### Response Errors
-
-| Name                | Reason                                                    |
-| ------------------- | --------------------------------------------------------- |
-| No matrix provided  | No Matrix JSON provided                                   |
-| Invalid matrix      | Invalid matrix, must contains at least 1x1                |
-| Invalid matrix size | Invalid matrix, must be square matrix                     |
-| Invalid character   | Invalid matrix, must be , must be only 0's and 1's matrix |
-
----
-
-### Curl Examples
-
-Example 1
 ```bash
-curl -X POST https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process -H "Content-Type: application/json" -d "[[1,1,1],[1,1,1],[1,1,1]]"
+yarn deploy --stage dev|prod
 ```
-Example 2
-```bash
-curl -X POST https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process -H "Content-Type: application/json" -d "[[1,1,1],[1,0,1],[1,1,1]]"
-```
-Example 3
-```bash
-curl -X POST https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process -H "Content-Type: application/json" -d "[[1,1,1],[1,1,1],[1,1,0]]"
-```
+
+This deploy backend and frontend.
+
+## Tecnologies used
+
+- NextJS
+- SST Framework (CDK AWS)
+- Vitest

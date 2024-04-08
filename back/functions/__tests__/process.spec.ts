@@ -1,4 +1,3 @@
-import { ERRORS } from 'src/utils/validators';
 import { matrixProcessor, handler } from '../src/process';
 import { HandlerResponse, requestGenerator } from './mocks/helper';
 import {
