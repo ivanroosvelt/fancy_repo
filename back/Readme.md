@@ -1,4 +1,3 @@
-
 # Backend Good Square Finder
 
 ## Features
@@ -8,7 +7,9 @@ Receives an n x n matrix, and finds out good squares inside it.
 
 ### Endpoint
 
-ApiEndpoint: https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process
+```
+https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process
+```
 
 ### Request
 

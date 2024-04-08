@@ -1,7 +1,7 @@
 # Table of Contents
 
-- [Backend Good Square Finder](./back/) - Simple endpoint to find good squares in given matrix.
-- [Front: Keyboard trainer](./front/) - Typeracer: Tool to practice and improve typing.
+- [Backend: Good Square Finder](./back/) - Simple endpoint to find good squares in given matrix.
+- [Front: Keyboard Trainer](./front/) - Typeracer: Tool to practice and improve typing.
 
 ## About this directory
 
@@ -13,8 +13,9 @@ yarn deploy --stage dev|prod
 
 This deploy backend and frontend.
 
-## Tecnologies used
+## Base tecnologies used
 
-- NextJS
+- NextJS (Typescript)
+- NodeJS (Typescript)
 - SST Framework (CDK AWS)
 - Vitest
