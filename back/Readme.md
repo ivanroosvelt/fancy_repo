@@ -7,38 +7,36 @@ Receives an n x n matrix, and finds out good squares inside it.
 
 ---
 
-### Curl Examples
+### Web access examples
 
 Example 1
-
-```bash
-curl -X POST https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process -H "Content-Type: application/json" -d "[[1,1,1],[1,1,1],[1,1,1]]"
 ```
-
+https://kn0hcw2g28.execute-api.us-east-1.amazonaws.com/process?matrix=[[1,1,1],[1,1,1],[1,1,1]]
+```
 Example 2
-
-```bash
-curl -X POST https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process -H "Content-Type: application/json" -d "[[1,1,1],[1,0,1],[1,1,1]]"
 ```
-
+https://kn0hcw2g28.execute-api.us-east-1.amazonaws.com/process?matrix=[[1,1,1],[1,0,1],[1,1,1]]
+```
 Example 3
-
-```bash
-curl -X POST https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process -H "Content-Type: application/json" -d "[[1,1,1],[1,1,1],[1,1,0]]"
+```
+https://kn0hcw2g28.execute-api.us-east-1.amazonaws.com/process?matrix=[[1,1,1],[1,1,1],[1,1,0]]
 ```
 
 ### Endpoint
 
 ```
-https://4pm7ogojhj.execute-api.us-east-1.amazonaws.com/process
+https://kn0hcw2g28.execute-api.us-east-1.amazonaws.com/process
 ```
 
 ### Request
 
-Method: POST
+Method: GET
 
-Body: JSON
+Query param: 
 
+?matrix=[[1,1,1,1],[1,1,1,1],[1,1,1,1]]
+
+Is equivalent to:
 ```json
 [
   [1, 1, 1, 1],
