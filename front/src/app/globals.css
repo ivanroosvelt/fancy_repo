@@ -12,7 +12,23 @@
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 39, 0, 0;
+    --color: 0,0,0;
+  }
+  input {
+    background-color: rgb(var(--background-start-rgb));
+    color: rgb(var(--foreground-rgb)); 
+  }
+  input:focus {
+    background-color: rgb(var(--background-end-rgb));
+    color: rgb(var(--foreground-rgb));
+  }
+  label {
+    color: rgb(var(--foreground-rgb)) !important;
+  }
+  
+  .hg-button, p {
+    color: rgb(0,0,0)
   }
 }
 
