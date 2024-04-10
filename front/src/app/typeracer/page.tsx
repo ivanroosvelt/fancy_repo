@@ -28,7 +28,7 @@ export default function Page() {
   const { data, isLoading, isError } = useAppConfig(user);
 
   return (
-    <main className="flex flex-col items-center justify-between p-12">
+    <main className="flex flex-col items-center justify-between py-2">
       <InfoModal onClose={doHideModal} modalData={modalData} />
       <div className="flex flex-row justify-center w-2/4 mb-4">
         <Image src="/logo.svg" alt="Good Squares" width={50} height={50} />
@@ -39,17 +39,17 @@ export default function Page() {
           TypeRacer
         </h2>
       </div>
-      <div className="flex flex-col align-middle border border-solid bg-white leading-7 p-5">
+      <div className="flex flex-col align-middle border border-solid bg-white leading-7 p-2">
         <div className="self-end mb-1 px-5">
           <button
             onClick={() => doRestart()}
-            className="bg-rose-500 hover:bg-rose-700 text-white font-bold py-2 px-4 border border-white rounded mr-2"
+            className="bg-rose-500 hover:bg-rose-700 text-white font-bold py-1 px-4 border border-white rounded mr-2"
           >
             Restart
           </button>
           <button
             onClick={() => doSignOut()}
-            className="bg-rose-800 hover:bg-rose-700 text-white font-bold py-2 px-4 border border-white rounded"
+            className="bg-rose-800 hover:bg-rose-700 text-white font-bold py-1 px-4 border border-white rounded"
           >
             Sign Out
           </button>
@@ -123,7 +123,6 @@ export default function Page() {
               doReset={doReset}
               doFinish={doFinish}
             />
-            <br />
             <div className="flex flex-grow items-center justify-center">
               <Keyboard physicalKeyboardHighlight={true} />
             </div>

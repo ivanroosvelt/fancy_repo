@@ -34,7 +34,7 @@ export default function Home() {
     router.push('/typeracer');
   };
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-5">
       <InfoModal
         onClose={() => setModalData({ ...modalData, visible: false })}
         modalData={modalData}
@@ -47,7 +47,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+          <p className="fixed left-0 top-0 dark:text-white flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
             Github&nbsp;
             <code className="font-mono font-bold">repository {`>`}</code>
           </p>
@@ -105,7 +105,7 @@ export default function Home() {
               -&gt;
             </span>
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50 dark:text-white`}>
             Improve your typing speed and accuracy with TypeRacer.
           </p>
         </div>
