@@ -8,7 +8,12 @@
 Includes the environment configuration stack and deploy commands. Can be deployed to AWS with:
 
 ```bash
-yarn deploy --stage dev|prod
+# Install dependencies
+yarn
+# Run Tests
+yarn test
+# Deploy dev or prod
+yarn deploy --stage dev
 ```
 
 This deploy backend and frontend.
@@ -18,4 +23,4 @@ This deploy backend and frontend.
 - NextJS (Typescript)
 - NodeJS (Typescript)
 - SST Framework (CDK AWS)
-- Vitest (``yarn test`` by project)
+- Vitest (``yarn test``)

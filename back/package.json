@@ -2,8 +2,10 @@
   "name": "@good-square/functions",
   "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
   "scripts": {
-    "test": "sst bind vitest",
+    "test": "vitest run",
+    "test-bind": "sst bind vitest",
     "typecheck": "tsc -noEmit"
   },
   "devDependencies": {
